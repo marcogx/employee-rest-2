@@ -10,13 +10,13 @@ import java.util.Map;
  */
 @Component
 public class Cache {
-    private Map<Long, Object> map = new HashMap<>();
+    private Map<Object, Object> map = new HashMap<>();
 
-    public void put(Long id, Object object) {
-        map.put(id, object);
+    public void put(Object key, Object val) {
+        map.put(key, val);
     }
 
-    public Object get(Long id) {
-        return map.get(id);
+    public Object get(Long key) {
+        return map.get(key);
     }
 }

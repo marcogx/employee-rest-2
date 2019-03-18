@@ -1,6 +1,8 @@
 ###
 #   Database Settings
 ###
+
+
 spring:
   datasource:
     url: jdbc:h2:mem:example-app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
@@ -28,3 +30,5 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+server:
+  port: 8090
