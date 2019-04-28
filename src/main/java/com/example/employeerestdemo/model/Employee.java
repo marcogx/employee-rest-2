@@ -8,15 +8,16 @@ import javax.validation.constraints.NotNull;
 /**
  * Created by guang on 3:52 PM 10/6/18.
  */
-// POJO
 @Entity
 @Table(name = "employees")
 public class Employee {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
+    @Column(length=1000)
     private String firstName;
 
     @NotNull

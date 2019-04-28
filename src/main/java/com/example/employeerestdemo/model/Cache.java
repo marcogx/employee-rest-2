@@ -13,6 +13,7 @@ public class Cache {
     private Map<Object, Object> map = new HashMap<>();
 
     public void put(Object key, Object val) {
+        //add some new code
         map.put(key, val);
     }
 
